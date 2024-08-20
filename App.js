@@ -1,21 +1,34 @@
+/* REVIEIWN OBJECTS VAR + define VAR */
 let age = 32;
-let greetingText = "Hi, I'm Max";
-alert(
-  greetingText
-); /* alert is a building fucntion for browser to show a text as a pop message */
-greetingText =
-  "Hi, i'am Pepe, sorry"; /* you can rewrite let varibale as code is executed from top to bottom */
-alert(greetingText);
-alert(age);
-
+let UserName = "Max";
 let hobbies = ["sport", "warhammer", "magic"];
 let job = {
-    title: "devloper",
-    location: "denver'",
-    salary: 3500,
-  };
-alert(hobbies[2]);
-alert(job.title);
+  title: "devloper",
+  location: "denver'",
+  salary: 5000,
+};
 
+let totalAdultYears;
 
+function calculateAdultyears(userAge) {
+  return userAge - 18;
+}
 
+totalAdultYears = calculateAdultyears(age);
+alert(totalAdultYears);
+
+age = 45;
+totalAdultYears = calculateAdultyears(age);
+alert(totalAdultYears);
+
+/* METHODS (funciton inside and object) */
+
+let person = {
+  name: "max",
+  greet() {
+    /* defining method does not require funciton KW */
+    alert("hello there");
+  },
+};
+
+person.greet();
