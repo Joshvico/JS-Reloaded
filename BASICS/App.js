@@ -15,11 +15,11 @@ function calculateAdultyears(userAge) {
 }
 
 totalAdultYears = calculateAdultyears(age);
-alert(totalAdultYears);
+console.log(totalAdultYears);
 
 age = 45;
 totalAdultYears = calculateAdultyears(age);
-alert(totalAdultYears);
+console.log(totalAdultYears);
 
 /* METHODS (funciton inside and object) */
 
@@ -27,7 +27,7 @@ let person = {
   name: "max",
   greet() {
     /* defining method does not require funciton KW */
-    alert("hello there");
+    console.log("hello there");
   },
 };
 
