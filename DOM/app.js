@@ -34,9 +34,13 @@ let firstH1Element = document.querySelector("h1")
 // 2 Remove it 
 
 firstH1Element.remove(); 
-firstH1Element.parentElement.removeChild(firstH1Element);  // ----> for older browsers
-
+/* firstH1Element.parentElement.removeChild(firstH1Element);  // ----> for older browsers
+ */
 /* MOVE ELEMENTS */
-firstParagraph.parentElement.append(firstParagraph) /* since appending has to be at the end the browser moves it atomatically */
+firstParagraph.parentElement.append(firstParagraph); /* since appending has to be at the end the browser moves it atomatically */
+// inner HTML
 
+console.log(firstParagraph.innerHTML); /* give you content to the content of the element + the HTML nested*/
+console.log(firstParagraph.textContent); /* give you PURE content to the content of the element*/
 
+firstParagraph.innerHTML = 'Hi! this is <strong>hello there</strong>'; /* adding html inside the stirng is interpreted as HTML  */
