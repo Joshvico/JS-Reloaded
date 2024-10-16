@@ -7,23 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Advanced JavaScript</title>
   <link rel="stylesheet" href="index.css">
-  <script src="app.js" defer></script>
+  <script src="demo.js" defer></script>
   <!-- defer attbruite allow use to excute JS once the whole page has been examined -->
 </head>
 
 <body>
-  <Section>
-    <div class="content">
-    <p>Product Name</p>
-    <div class="tipping">
-      <input type="text">
-      <p>
-        <span>60</span>/60
-      </p>
+  <form action="">
+    <div class="control">
+      <label for="product-name">Product Name</label>
+      <input type="text" id="product-name" name="product-name" maxlength="60">
+      <span id="charcount">
+        <span id="remaining-chars">60</span>/60
+      </span>
     </div>
-    <button type="submit">submit</button>
-  </div>
-  </Section>
+    <button>submit</button>
+  </form>
 </body>
-
 </html>
